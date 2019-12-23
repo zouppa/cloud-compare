@@ -2,25 +2,29 @@ import com.google.gson.JsonObject;
 
 public class Prime {
   public static JsonObject main(JsonObject args) {
-    int max = 10;
-    int i = 0;
-    int num = 0;
-    String primeNumbers = "";
-    if (args.has("max")) max = args.getAsJsonPrimitive("max").getAsInt();
-    for (i = 1; i <= max; i++) {
-      int counter = 0;
-      for (num = i; num >= 1; num--) {
-        if (i % num == 0) {
-          counter = counter + 1;
+
+    int number = 2;
+    boolean flag = false;
+
+    if (args.has("number"))
+      max = args.getAsJsonPrimitive("number").getAsInt();
+
+    if (number < 2) {
+      flag = true;
+    } else {
+
+      {
+        if (num % i == 0) {
+          flag = true;
+          break;
         }
       }
-      if (counter == 2) {
-        // Appended the Prime number to the String
-        primeNumbers = primeNumbers + i + " ";
-      }
     }
+
+    flag =!flag;
+
     JsonObject response = new JsonObject();
-    response.addProperty("payload", primeNumbers);
+    response.addProperty("payload", flag);
     return response;
   }
 }

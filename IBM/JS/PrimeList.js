@@ -13,5 +13,5 @@ function main(params) {
             }
         }
     }
-	return { payload: primes};
+	return { "payload": primes};
 }

@@ -1,0 +1,13 @@
+IBM Commands : 
+JS create :  ibmcloud fn action create PrimeListJs /Users/zouppa/ibm_cloud/cloud-compare/IBM/JS/PrimeList.js  --web true
+JS API Create : ibmcloud fn api create /prime /ListJS get prime --response-type json
+
+Java 
+
+javac PrimeList.java 
+jar cvf PrimeList.jar PrimeList.class 
+ibmcloud fn action create PrimeListJava PrimeList.jar --kind java --main PrimeList
+
+
+
+Shift+Alt+F

@@ -1,7 +1,7 @@
 import com.google.gson.JsonObject;
 
-public class Prime {
-  public static JsonObject main(JsonObject args) {
+public class PrimeList {
+  public static JsonObject main(final JsonObject args) {
     int max = 10;
     int i = 0;
     int num = 0;
@@ -19,7 +19,7 @@ public class Prime {
         primeNumbers = primeNumbers + i + " ";
       }
     }
-    JsonObject response = new JsonObject();
+    final JsonObject response = new JsonObject();
     response.addProperty("payload", primeNumbers);
     return response;
   }
