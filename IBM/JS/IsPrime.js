@@ -1,22 +1,10 @@
 function main(params) {
-  var number = params.number;
-  if (number > 1) {
-    for (var i = 2; i < number; i++) {
-
-      if (number % i !== 0) {
-        return { payload: true };
-      }
-
-      else if (number === i * i) {
-        return { payload: false }
-      }
-
-      else {
-        return { payload: false };
-      }
+  let prime = true;
+  for (let i = 2; i <= Math.sqrt(params.number); i++) {
+    if (params.number % i == 0) {
+      prime = false;
+      break;
     }
   }
-  else {
-    return { payload: false };
+    return { payload: prime };
   }
-}
