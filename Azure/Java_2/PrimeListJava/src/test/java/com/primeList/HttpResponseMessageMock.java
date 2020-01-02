@@ -1,4 +1,4 @@
-package com.function;
+package com.primeList;
 
 import com.microsoft.azure.functions.*;
 

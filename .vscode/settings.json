@@ -1,5 +1,5 @@
 {
-    "azureFunctions.deploySubpath": "Azure/Java/target/azure-functions/Java-1577382773395/",
+    "azureFunctions.deploySubpath": "Azure/Java_2/IsPrimeJava/target/azure-functions/IsPrimeJava-1577991093651/",
     "azureFunctions.projectLanguage": "Java",
     "azureFunctions.projectRuntime": "~2",
     "debug.internalConsoleOptions": "neverOpen",

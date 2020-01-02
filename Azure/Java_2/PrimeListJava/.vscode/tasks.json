@@ -7,17 +7,14 @@
             "problemMatcher": "$func-watch",
             "isBackground": true,
             "options": {
-                "cwd": "${workspaceFolder}/Azure/Java_2/IsPrimeJava/target/azure-functions/IsPrimeJava-1577991093651/"
+                "cwd": "${workspaceFolder}/target/azure-functions/PrimeListJava-1577989806349/"
             },
             "dependsOn": "package"
         },
         {
             "label": "package",
             "command": "mvn clean package",
-            "type": "shell",
-            "options": {
-                "cwd": "${workspaceFolder}/Azure/Java_2/IsPrimeJava"
-            }
+            "type": "shell"
         }
     ]
 }
