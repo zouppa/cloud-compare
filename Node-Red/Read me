@@ -1,0 +1,5 @@
+To be able to run the dashboard you will need to : 
+1-install node-red 
+2-install node-red-contrib-interval-length from the palette 
+3-install node-red-dashboard
+4-import the Cloud_Compare.json flows
